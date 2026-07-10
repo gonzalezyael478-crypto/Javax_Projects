@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane fitToWidth="true" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <FlowPane hgap="15.0" vgap="15.0" styleClass="content-pane" prefWrapLength="600.0">
+         <children>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 1" styleClass="card-small-text"/></children>
+            </StackPane>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 2" styleClass="card-small-text"/></children>
+            </StackPane>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 3" styleClass="card-small-text"/></children>
+            </StackPane>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 4" styleClass="card-small-text"/></children>
+            </StackPane>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 5" styleClass="card-small-text"/></children>
+            </StackPane>
+            <StackPane prefHeight="140.0" prefWidth="180.0" styleClass="card-small">
+               <children><Label text="Componente 6" styleClass="card-small-text"/></children>
+            </StackPane>
+         </children>
+      </FlowPane>
+   </content>
+</ScrollPane>

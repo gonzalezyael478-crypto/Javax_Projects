@@ -1,4 +1,4 @@
-package com.universidad;
+package com.guiusuario;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,18 +17,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // Se especifica el nombre de la vista dentro de resources
-        scene = new Scene(loadFXML("Escena"), 640, 480);
+        scene = new Scene(loadFXML("primary"), 640, 480);
         stage.setScene(scene);
-         // ======= CONFIGURACIONES DE LA VENTANA (STAGE) =======
-    
-        // 2. Establecer el título de la ventana
-        stage.setTitle("Gestión de Estudiantes - Universidad");
-    
-        // 3. Evitar que el usuario cambie el tamaño de la ventana
-        stage.setResizable(false);
-    
-    // =====================================================
         stage.show();
     }
 

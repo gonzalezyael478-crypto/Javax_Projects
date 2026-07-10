@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="20.0" vgap="20.0" styleClass="content-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+    <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="ALWAYS" percentHeight="50.0" />
+    <RowConstraints vgrow="ALWAYS" percentHeight="50.0" />
+  </rowConstraints>
+   <children>
+      <StackPane styleClass="card, card-blue" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <children><Label styleClass="card-text" text="Panel de Control Principal" /></children>
+      </StackPane>
+      <StackPane styleClass="card, card-green" GridPane.columnIndex="1" GridPane.rowIndex="0">
+         <children><Label styleClass="card-text" text="Métricas de Usuario" /></children>
+      </StackPane>
+      <StackPane styleClass="card, card-orange" GridPane.columnIndex="0" GridPane.rowIndex="1">
+         <children><Label styleClass="card-text" text="Estadísticas y Flujos" /></children>
+      </StackPane>
+      <StackPane styleClass="card, card-purple" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children><Label styleClass="card-text" text="Preferencias del Sistema" /></children>
+      </StackPane>
+   </children>
+</GridPane>

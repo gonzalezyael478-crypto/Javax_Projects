@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0986ae;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.3" layoutY="40.0" prefHeight="359.0" prefWidth="600.0" style="-fx-background-color: #0986ae;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #0986ae;">
+               <children>
+                  <VBox prefHeight="359.0" prefWidth="176.0" style="-fx-background-color: #0986ae;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Inicio" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Usuarios" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Accesos" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Reportes" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Estadisticas" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Configuración" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-border-color: black; -fx-background-color: #1d7cc1; -fx-border-width: 0.4; -fx-border-insets: 1;" text="Cerrar cesión" textFill="#ffe000">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #0986ae;">
+               <children>
+                  <VBox layoutX="40.0" prefHeight="250.0" prefWidth="340.0" style="-fx-background-color: #0986ae;">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="415.0" text="Registro" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" prefHeight="40.0" prefWidth="415.0" text="No. Control" textAlignment="CENTER" textFill="#a9ff77">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField />
+                        <Label contentDisplay="CENTER" prefHeight="40.0" prefWidth="415.0" text="Nombre" textAlignment="CENTER" textFill="#a9ff77">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField />
+                        <Label contentDisplay="CENTER" prefHeight="40.0" prefWidth="415.0" text="Carrera" textAlignment="CENTER" textFill="#a9ff77">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField />
+                     </children>
+                  </VBox>
+                  <Button layoutX="154.0" layoutY="277.0" mnemonicParsing="false" text="Registrar">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label prefHeight="41.0" prefWidth="600.0" style="-fx-background-color: #0361fa; -fx-border-color: black; -fx-border-width: 0.5;" text="Registro de Ususarios" textFill="#ffee00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
