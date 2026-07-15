@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Importación de los componentes de control de JavaFX (botones, tablas, campos de texto, etc.) -->
+<?import javafx.scene.control.*?>
+<!-- Importación de los layouts o contenedores (VBox, HBox, GridPane) que estructuran la interfaz -->
+<?import javafx.scene.layout.*?>
+<!-- Importación para manejar márgenes y espaciados internos (Padding) -->
+<?import javafx.geometry.Insets?>
+
+<!-- 
+    VBox: Contenedor principal que organiza sus elementos hijos verticalmente (uno abajo de otro).
+    spacing="10": Deja un espacio de 10 píxeles entre cada elemento hijo directo.
+    alignment="CENTER": Centra todos los elementos dentro de este contenedor.
+    fx:controller: CONECTA ESTA VISTA CON JAVA. Apunta a la clase que controlará la lógica de estos componentes.
+-->
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com" xmlns:fx="http://javafx.com" fx:controller="edu.utng.controller.LibroController">
+    
+    <!-- padding: Agrega un margen interno de 15 píxeles alrededor de todo el contenido del VBox para que no toque los bordes de la ventana -->
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <!-- 
+        GridPane: Contenedor en forma de cuadrícula (matriz de filas y columnas). Ideal para formularios.
+        hgap y vgap: Espaciado horizontal y vertical de 10 píxeles entre las celdas de la cuadrícula.
+    -->
+    <GridPane hgap="10" vgap="10">
+        <!-- 
+            Filas y Columnas (Base 0):
+            GridPane.columnIndex="0" -> Columna Izquierda (Etiquetas)
+            GridPane.columnIndex="1" -> Columna Derecha (Campos de entrada)
+            fx:id: El nombre exacto de la variable que debes declarar en tu LibroController usando @FXML
+        -->
+        <!-- Fila 0: Título -->
+        <Label text="Título:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtTitulo" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <!-- Fila 1: Autor -->
+        <Label text="Autor:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtAutor" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <!-- Fila 2: Año -->
+        <Label text="Año:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtAnio" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+
+    <!-- HBox: Contenedor que organiza los botones de forma horizontal (uno al lado del otro) -->
+    <HBox spacing="10" alignment="CENTER">
+        <!-- 
+            onAction="#nombreMetodo": Evento "Click". Al presionar el botón, JavaFX buscará y 
+            ejecutará un método público (o anotado con @FXML) con ese nombre exacto en tu Controlador.
+        -->
+        <Button text="Guardar" fx:id="btnGuardar" onAction="#guardarLibro"/>
+        <Button text="Modificar" fx:id="btnModificar" onAction="#modificarLibro"/>
+        <Button text="Eliminar" fx:id="btnEliminar" onAction="#eliminarLibro"/>
+        <Button text="Limpiar" fx:id="btnLimpiar" onAction="#limpiarCampos"/>
+    </HBox>
+
+    <!-- 
+        TableView: Tabla para mostrar la lista de registros de la base de datos.
+        VBox.vgrow="ALWAYS": Obliga a la tabla a expandirse verticalmente y ocupar todo el espacio 
+        restante disponible en la ventana cuando el usuario la haga más grande.
+    -->
+    <TableView fx:id="tblLibros" VBox.vgrow="ALWAYS">
+        <columns>
+            <!-- 
+                TableColumn: Columnas individuales de la tabla.
+                fx:id: Necesario en el controlador para mapear qué propiedad del objeto (ej. Libro.getId()) va en esta columna.
+                prefWidth: Ancho sugerido en píxeles para la columna.
+            -->
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colTitulo" text="Título" prefWidth="150"/>
+            <TableColumn fx:id="colAutor" text="Autor" prefWidth="150"/>
+            <TableColumn fx:id="colAnio" text="Año" prefWidth="80"/>
+        </columns>
+    </TableView>
+</VBox>
