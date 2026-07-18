@@ -37,7 +37,7 @@ public class Main extends Application {
         // FXMLLoader lee el archivo XML y lo transforma en objetos reales de Java en memoria.
         // getClass().getResource() busca el archivo "libro_view.fxml" dentro de tus carpetas de recursos o código.
         // Parent es el contenedor genérico que almacena toda la estructura visual leída.
-        Parent root = FXMLLoader.load(getClass().getResource("/edu/utng/usuario_view.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("/edu/utng/libro_view.fxml")); 
         // 📌 NOTA: Se recomienda usar una ruta absoluta con '/' al inicio para que el IDE la encuentre sin importar dónde compiles.
 
         // 🏷️ PASO 3: Configuración de la Ventana
